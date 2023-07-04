@@ -10,13 +10,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
+
 public class SwaggerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SwaggerApplication.class, args);
 	}
-public Docket apis(){
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.example.swagger")).build();
-
-}
 }
